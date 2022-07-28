@@ -1,6 +1,6 @@
 -- QUESTION 1:
 
-SELECT COUNT("userId") AS "currentExperiences" FROM experiences WHERE "endDate" IS NOT NULL;
+SELECT COUNT("endDate") AS "currentExperiences" FROM experiences;
 
 -- QUESTION 2:
 

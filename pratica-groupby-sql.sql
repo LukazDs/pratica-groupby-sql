@@ -15,3 +15,9 @@ ON users.id = testimonials."writerId" GROUP BY users.name;
 
 -- QUESTION 4:
 
+SELECT MAX(jobs.salary) AS maximumSalary, roles.name AS role 
+FROM jobs JOIN roles ON roles.id = jobs."roleId" 
+WHERE jobs.active = true 
+GROUP BY roles.name 
+ORDER BY maximumSalary;
+
